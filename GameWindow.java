@@ -192,12 +192,12 @@ public class GameWindow extends JFrame {
 		int coord, prevCoord = 300;
 		public void mousePressed(MouseEvent e){
 			ICOptions.setSelectedIndex(4);
-			coord = (e.getY()/7-58)*mult+e.getX()/7-115;
+			coord = (e.getY()/7-49)*mult+e.getX()/7-86;
 			setBlock(coord);
 			updateUI(state);
 		}
 		public void mouseDragged(MouseEvent e){
-			coord = (e.getY()/7-58)*mult+e.getX()/7-115;
+			coord = (e.getY()/7-49)*mult+e.getX()/7-86;
 			if(coord!=prevCoord){
 				setBlock(coord);
 				prevCoord = coord;
